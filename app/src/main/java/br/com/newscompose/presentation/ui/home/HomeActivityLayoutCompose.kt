@@ -53,7 +53,6 @@ class HomeActivityLayoutCompose {
             }
         }
     }
-
     @Preview(showBackground = true)
     @Composable
     fun Preview() {
