@@ -9,6 +9,12 @@ fun DependencyHandlerScope.kotlin(){
     "implementation"(Dependencies.kotlin_jdk)
 }
 
+fun DependencyHandlerScope.networking(){
+    "implementation"(Dependencies.retrofit)
+    "implementation"(Dependencies.converter_gson)
+    "implementation"(Dependencies.okhttp3_logging_interceptor)
+}
+
 fun DependencyHandlerScope.compose(){
     "implementation"(Dependencies.core_ktx)
     "implementation"(Dependencies.compose_activity)

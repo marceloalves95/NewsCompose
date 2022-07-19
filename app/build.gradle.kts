@@ -1,6 +1,9 @@
+import Version.koin_version
+
 plugins {
     id("com.android.application")
     id("kotlin-android")
+    id("kotlin-parcelize")
 }
 android {
 
@@ -41,6 +44,8 @@ dependencies{
     implementation("br.com.core:extensions:1.0.0")
 //    implementation("androidx.navigation:navigation-compose:2.5.0-beta1")
 //    implementation("androidx.navigation:navigation-runtime-ktx:2.4.2")
+    implementation("io.insert-koin:koin-androidx-compose:$koin_version")
+    networking()
     kotlin()
     compose()
     composeTest()
